@@ -1,4 +1,4 @@
 RewriteEngine on
-RewriteCond %{HTTP_HOST} ^huarleystudios.com/whatsapp$ [OR]
-RewriteCond %{HTTP_HOST} ^www.huarleystudios.com/whatsapp$
+RewriteCond %{HTTPS_HOST} ^huarleystudios.com/whatsapp$ [OR]
+RewriteCond %{HTTPS_HOST} ^www.huarleystudios.com/whatsapp$
 RewriteRule ^(.*)$ https://wa.me/message/O2HKT4YGPVO4D1$1 [R=301,L]
